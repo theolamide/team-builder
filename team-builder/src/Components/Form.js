@@ -43,6 +43,7 @@ const InputForm = props =>{
                     value={member.role}
                     onChange ={changeHandler} 
                 /> 
+                
                 <button type="submit">Add Member</button>           
                     
             </form>
