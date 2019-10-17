@@ -16,8 +16,9 @@ const InputForm = props =>{
 
     return (
         <div>
-            <form onSubmit = {submitForm}>
-                <label htmlFor = "name">Name</label>
+            <form onSubmit = {submitForm} className = "form">
+                <div className ="inputFields">
+                <label htmlFor = "name">name</label>
                 <input 
                     id = "name"
                     type = "text"
@@ -25,8 +26,10 @@ const InputForm = props =>{
                     value={member.name} 
                     onChange ={changeHandler}
                     />
+                </div>
 
-                <label htmlFor ="email">Email</label>
+                <div className ="inputFields">
+                <label htmlFor ="email">e-mail</label>
                 <input 
                     id = "email"
                     type = "text"
@@ -34,8 +37,10 @@ const InputForm = props =>{
                     value={member.email}
                     onChange ={changeHandler} 
                 />
-
-                <label htmlFor ="role">Role</label>
+                </div>
+                
+                <div className ="inputFields">
+                <label htmlFor ="role">role</label>
                 <input 
                     id = "role"
                     type = "text"
@@ -43,8 +48,11 @@ const InputForm = props =>{
                     value={member.role}
                     onChange ={changeHandler} 
                 /> 
+                </div>
                 
-                <button type="submit">Add Member</button>           
+                <div className = "buttonContainer">
+                <button className = "addMemberButton"type="submit">Add Member</button> 
+                </div>          
                     
             </form>
 

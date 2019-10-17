@@ -20,3 +20,44 @@
 .App-link {
   color: #09d3ac;
 }
+
+.cards{
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.cards-inner{
+  border: 1px solid black;
+  width: 25%;
+  background: linear-gradient(pink, #db7f7f);
+  color: white;
+  border-radius: 2rem;
+  margin: 2rem;
+}
+
+.form{
+  display:flex;
+  justify-content: center;
+}
+
+.inputFields{
+  width: 25%;
+}
+
+.buttonContainer{
+  width: 20%;
+}
+
+.addMemberButton{
+  color: white;
+  border-radius: 2rem;
+  background: skyblue;
+  border: 3px solid green;
+  cursor: pointer;
+  width: 50%;
+}
+
+.inputFields label{
+  padding: 1rem;
+}
